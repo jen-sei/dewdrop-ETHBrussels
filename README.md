@@ -13,7 +13,18 @@ Simply claim native token of the chain after verifying your uniqueness enabled v
 
 ![userflow](https://github.com/user-attachments/assets/53cb9f2a-f985-4f2b-8a6d-bc4aa84833af)
 
-ADD DESCRIPTION
+## Vision
+8000 years ago, the river Nile provided a fertile foundation to jumpstart an entire civilization. 
+
+In 2024 AD, we want to create digital rivers, to give a new generation of netizens the opportunity to participate with, experience and evolve their online presence.
+
+## Project
+With this goal in mind we built an application to start at the smallest and most accessible of water sources; a droplet of dew, clinging to flora in the morning.
+
+With our app, L2s have the opportunity to onboard beginning human users, using faucets for distribution of resources. 
+We implemented Worldcoin ID 2.0 for the verification, WalletConnect to interface with user wallets, and a first selection of chains in the form of: Apechain, Arbitrum, Avail, Base, Celo, Morph, Near, Rootstock, Scroll, Zircuit.
+
+Sybil attack resistance in web3 is a recent characteristic, a feature improved in web3 since the advent of initiatives like Gitcoin Passport, Polygon ID and Worldcoin ID. Allowing for public open infrastructure, without centralized backdoors for exceptions to onboard the next billion users.
 
 ## Deployments
 
