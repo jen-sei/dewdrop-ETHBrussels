@@ -23,12 +23,12 @@ ADD DESCRIPTION
 
 ** Presentation**
 
-- [Slides]()
+- [Slides](https://github.com/jen-sei/dewdrop-ETHBrussels/blob/main/SLIDES.md)
 
 ** Github**
 
 - [FrontEnd]()
-- [Contracts]()
+- [Contracts](https://github.com/Tranquil-Flow/dewdrop)
 
 **Contract Addresses**
 
