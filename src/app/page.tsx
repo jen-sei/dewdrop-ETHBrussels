@@ -22,6 +22,11 @@ const chains = [
     logo: "Aurora.jpg",
   },
   {
+    name: "Avail",
+    contract: "0x987aAc1F90e05bE65F450339228d357638f87284",
+    logo: "Avail.jpg",
+  },
+  {
     name: "Base",
     contract: "0x987aAc1F90e05bE65F450339228d357638f87284",
     logo: "Base.jpg",
