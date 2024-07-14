@@ -35,7 +35,7 @@ ADD DESCRIPTION
 - [Apechain Testnet](https://jenkins.explorer.caldera.xyz/address/0x987aAc1F90e05bE65F450339228d357638f87284?tab=contract)
 - [Arbitrum Sepolia](https://sepolia.arbiscan.io/address/0x11D71ca2611C8714C2E356B00b5ae1c790E4aa2d#code)
 - [Aurora Testnet](https://explorer.testnet.aurora.dev/address/0x987aAc1F90e05bE65F450339228d357638f87284?tab=contract)
-- [Avail OP Plasma Sepolia]()
+- [Avail OP Plasma Sepolia](https://op-plasma-avail-testnet-explorer.alt.technology/address/0x987aAc1F90e05bE65F450339228d357638f87284?tab=contract)
 - [Morph Holesky](https://base-sepolia.blockscout.com/address/0x987aAc1F90e05bE65F450339228d357638f87284?tab=contract)
 - [Rootstock Testnet](https://rootstock-testnet.blockscout.com/address/0x987AAc1F90e05BE65f450339228d357638F87284?tab=contract)
 - [Scroll Sepolia](https://sepolia.scrollscan.com/address/0x987aAc1F90e05bE65F450339228d357638f87284#code)
