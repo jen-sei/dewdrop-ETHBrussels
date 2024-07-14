@@ -9,15 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.51.1",
-    "@web3modal/wagmi": "^5.0.6",
     "@worldcoin/idkit": "^1.2.2",
     "ethers": "^6.13.1",
     "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18",
-    "viem": "^2.17.3",
-    "wagmi": "^2.10.10"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",

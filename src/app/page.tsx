@@ -1,57 +1,62 @@
 "use client";
-import {
-  IDKitWidget,
-  VerificationLevel,
-  ISuccessResult,
-} from "@worldcoin/idkit";
-import { Web3ModalProvider } from "./providers/Web3Modal";
-import ConnectWallet from "./providers/ConnectWallet";
+
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Card from "./components/Card";
+import { ethers } from "ethers";
+
+const chains = [
+  {
+    name: "Arbitrum",
+    contract: "",
+    logo: "Arbitrum.jpg",
+  },
+];
 
 export default function Home() {
-  const verifyProof = async (proof: ISuccessResult) => {
-    try {
-      const res = await fetch("/api/drip", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          proof,
-          recipient: "0x3897172a62e24ba3804a9d805ae14ad8c1a2bfdd",
-        }),
-      });
-
-      if (!res.ok) {
-        // Handle non-200 responses
-        const errorData = await res.json();
-        throw new Error(errorData.message || "Something went wrong");
-      }
-
-      const data = await res.json();
-    } catch (error) {
-      throw new Error(error.message || "Unable to verify");
-    }
-  };
-
-  const onSuccess = () => {
-    console.log("Success");
-  };
+  const [walletAddress, setWalletAddress] = useState("");
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Web3ModalProvider>
-        <ConnectWallet />
-        <IDKitWidget
-          app_id={process.env.NEXT_PUBLIC_APP_ID as `app_${string}`}
-          action={process.env.NEXT_PUBLIC_ACTION_ID as string}
-          signal={process.env.NEXT_PUBLIC_SIGNAL}
-          verification_level={VerificationLevel.Device}
-          handleVerify={verifyProof}
-          onSuccess={onSuccess}
+    <main className="flex min-h-screen flex-col items-center  p-24">
+      <Image src="/dewdrop.png" width={200} height={100} alt="logo" />
+      <div className="flex items-center justify-center mt-10">
+        <div
+          aria-label="card"
+          className="p-8 rounded-3xl bg-white max-w-sm w-full"
         >
-          {({ open }) => <button onClick={open}>Verify with World ID</button>}
-        </IDKitWidget>
-      </Web3ModalProvider>
+          <div aria-label="header" className="flex items-center space-x-2">
+            <div className="space-y-0.5 flex-1">
+              <h3 className="font-medium text-lg tracking-tight text-gray-900 leading-tight">
+                Claim tokens using proof of personhood
+              </h3>
+            </div>
+            <a
+              href="/"
+              className="inline-flex items-center shrink-0 justify-center w-8 h-8 rounded-full text-white bg-gray-900 focus:outline-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M17 7l-10 10"></path>
+                <path d="M8 7l9 0l0 9"></path>
+              </svg>
+            </a>
+          </div>
+          {chains.map((chain) => (
+            <Card chain={chain} />
+          ))}
+        </div>
+      </div>
     </main>
   );
 }
