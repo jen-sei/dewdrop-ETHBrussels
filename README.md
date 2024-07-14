@@ -21,11 +21,11 @@ ADD DESCRIPTION
 
 - [Vercel](https://dewdrop-eth-brussels.vercel.app/)
 
-** Presentation**
+**Presentation**
 
 - [Slides](https://github.com/jen-sei/dewdrop-ETHBrussels/blob/main/SLIDES.md)
 
-** Github**
+**Github**
 
 - [FrontEnd](https://github.com/jen-sei/dewdrop-ETHBrussels)
 - [Contracts](https://github.com/Tranquil-Flow/dewdrop)
