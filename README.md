@@ -27,7 +27,7 @@ ADD DESCRIPTION
 
 ** Github**
 
-- [FrontEnd]()
+- [FrontEnd](https://github.com/jen-sei/dewdrop-ETHBrussels)
 - [Contracts](https://github.com/Tranquil-Flow/dewdrop)
 
 **Contract Addresses**
