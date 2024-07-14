@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## DEWDROP.
 
-## Getting Started
+Sybil resistant mainnet faucets.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![banner (18)](https://github.com/user-attachments/assets/e76a83e7-3e1a-4450-8220-dc34d2409498)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Dewdrop** is a public token faucet for L2 EVM networks and beyond. The purpose of the product is to enable users that have recieved USDC or any other erc-20 token to claim initial/native funds required to conduct the first transaction on respective chain.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Example of transaction could be a transfer to a centralised exchange, swap to another token, or transfer to another wallet. Its implementation is simple, secure and doesn't require complex account abstraction logics or bridging.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Simply claim native token of the chain after verifying your uniqueness enabled via World ID.
 
-## Learn More
+![userflow](https://github.com/user-attachments/assets/53cb9f2a-f985-4f2b-8a6d-bc4aa84833af)
 
-To learn more about Next.js, take a look at the following resources:
+ADD DESCRIPTION
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployments
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Website**
 
-## Deploy on Vercel
+- [Vercel](https://dewdrop-eth-brussels.vercel.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+** Presentation**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Slides]()
+
+** Github**
+
+- [FrontEnd]()
+- [Contracts]()
+
+**Contract Addresses**
+
+- [Apechain Testnet](https://jenkins.explorer.caldera.xyz/address/0x987aAc1F90e05bE65F450339228d357638f87284?tab=contract)
+- [Arbitrum Sepolia](https://sepolia.arbiscan.io/address/0x11D71ca2611C8714C2E356B00b5ae1c790E4aa2d#code)
+- [Aurora Testnet](https://explorer.testnet.aurora.dev/address/0x987aAc1F90e05bE65F450339228d357638f87284?tab=contract)
+- [Avail OP Plasma Sepolia]()
+- [Morph Holesky](https://base-sepolia.blockscout.com/address/0x987aAc1F90e05bE65F450339228d357638f87284?tab=contract)
+- [Rootstock Testnet](https://rootstock-testnet.blockscout.com/address/0x987AAc1F90e05BE65f450339228d357638F87284?tab=contract)
+- [Scroll Sepolia](https://sepolia.scrollscan.com/address/0x987aAc1F90e05bE65F450339228d357638f87284#code)
+- [Zircuit Testnet](https://explorer.zircuit.com/address/0x987aAc1F90e05bE65F450339228d357638f87284?activeTab=3)
