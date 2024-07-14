@@ -7,10 +7,55 @@ import { ethers } from "ethers";
 
 const chains = [
   {
+    name: "Apechain",
+    contract: "0x987aAc1F90e05bE65F450339228d357638f87284",
+    logo: "Apechain.jpg",
+  },
+  {
     name: "Arbitrum",
-    contract: "",
+    contract: "0x11D71ca2611C8714C2E356B00b5ae1c790E4aa2d",
     logo: "Arbitrum.jpg",
   },
+  {
+    name: "Aurora",
+    contract: "0x987aAc1F90e05bE65F450339228d357638f87284",
+    logo: "Aurora.jpg",
+  },
+  {
+    name: "Avail",
+    contract: "0x987aAc1F90e05bE65F450339228d357638f87284",
+    logo: "Avail.jpg",
+  },
+  {
+    name: "Base",
+    contract: "0x987aAc1F90e05bE65F450339228d357638f87284",
+    logo: "Base.jpg",
+  },
+  {
+    name: "Celo",
+    contract: "0x987aAc1F90e05bE65F450339228d357638f87284",
+    logo: "Celo.jpg",
+  },
+  {
+    name: "Morph",
+    contract: "0x987aAc1F90e05bE65F450339228d357638f87284",
+    logo: "Morph.jpg",
+  },
+  {
+    name: "Rootstock",
+    contract: "0x987aAc1F90e05bE65F450339228d357638f87284",
+    logo: "Rootstock.jpg",
+  },
+  {
+    name: "Scroll",
+    contract: "0x987aAc1F90e05bE65F450339228d357638f87284",
+    logo: "Scroll.jpg",
+  },
+  {
+    name: "Zircuit",
+    contract: "0x987aAc1F90e05bE65F450339228d357638f87284",
+    logo: "Zircuit.jpg",
+  }
 ];
 
 export default function Home() {
