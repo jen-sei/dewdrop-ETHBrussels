@@ -26,6 +26,12 @@ We implemented Worldcoin ID 2.0 for the verification, WalletConnect to interface
 
 Sybil attack resistance in web3 is a recent characteristic, a feature improved in web3 since the advent of initiatives like Gitcoin Passport, Polygon ID and Worldcoin ID. Allowing for public open infrastructure, without centralized backdoors for exceptions to onboard the next billion users.
 
+## How its made
+
+The contract was deployed with Foundry.
+A user connects to the page with wallet browsers like Metamask. We used WalletConnect to simplify this experience, and Next.js for the frontend. Users verify their Proof of Humanness using their Worldcoin ID. They then select the chain they'd like to onboard. We implemented Apechain, Arbitrum, Avail, Base, Celo, Morph, Near, Rootstock, Scroll, and Zircuit. 
+In our implementation, there is only one distribution provided per proof. The amount is specified by the deployer. The funds are then distributed to the verified person.
+
 ## Deployments
 
 **Website**
