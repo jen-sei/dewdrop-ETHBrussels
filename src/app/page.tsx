@@ -4,13 +4,10 @@ import {
   VerificationLevel,
   ISuccessResult,
 } from "@worldcoin/idkit";
-import { useEffect, useState } from "react";
-import { CHAIN } from "@/app/chains";
-import { verify } from "@/app/actions/route";
+import { Web3ModalProvider } from "./providers/Web3Modal";
+import ConnectWallet from "./providers/ConnectWallet";
 
 export default function Home() {
-  const [walletAddress, setWalletAddress] = useState("");
-
   const verifyProof = async (proof: ISuccessResult) => {
     try {
       const res = await fetch("/api/drip", {
@@ -42,22 +39,19 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <input
-        type="text"
-        value={walletAddress}
-        onChange={(e) => setWalletAddress(e.target.value)}
-      />
-
-      <IDKitWidget
-        app_id={process.env.NEXT_PUBLIC_APP_ID as `app_${string}`}
-        action={process.env.NEXT_PUBLIC_ACTION_ID as string}
-        signal={process.env.NEXT_PUBLIC_SIGNAL}
-        verification_level={VerificationLevel.Device}
-        handleVerify={verifyProof}
-        onSuccess={onSuccess}
-      >
-        {({ open }) => <button onClick={open}>Verify with World ID</button>}
-      </IDKitWidget>
+      <Web3ModalProvider>
+        <ConnectWallet />
+        <IDKitWidget
+          app_id={process.env.NEXT_PUBLIC_APP_ID as `app_${string}`}
+          action={process.env.NEXT_PUBLIC_ACTION_ID as string}
+          signal={process.env.NEXT_PUBLIC_SIGNAL}
+          verification_level={VerificationLevel.Device}
+          handleVerify={verifyProof}
+          onSuccess={onSuccess}
+        >
+          {({ open }) => <button onClick={open}>Verify with World ID</button>}
+        </IDKitWidget>
+      </Web3ModalProvider>
     </main>
   );
 }

@@ -25,6 +25,7 @@ export async function drip(proof: string, chain: CHAIN, recipient: string) {
   const provider = new ethers.JsonRpcProvider(
     "https://public.stackup.sh/api/v1/node/arbitrum-sepolia"
   );
+  // @ts-ignore
   const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
   const contractAddress = "0x987aAc1F90e05bE65F450339228d357638f87284";
 
